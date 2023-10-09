@@ -213,17 +213,6 @@ first div in the grid  and place it in the grid. */
   text-align: center;
 }
 
-.text-block:nth-child(2) {
-  top: 300px; /* Adjust the value as needed for spacing */
-}
-
-.text-block:nth-child(3) {
-  top: 600px; /* Adjust the value as needed for spacing */
-}
-
-.text-block:nth-child(4) {
-  top: 900px; /* Adjust the value as needed for spacing */
-}
 
 
 
