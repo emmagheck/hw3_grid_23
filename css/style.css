@@ -140,20 +140,22 @@ nav a:hover, nav a:focus {
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  gap: 15px;
+  grid-row-gap: 15px;
+  /* align-items: center; */
 }
 
-/* Step 5: Write selector/rule property to add the background image to the 
-first div in the grid  and place it in the grid. */
+/* Step 5: Write selector/rule property to add the background image to the
+first div in the grid and place it in the grid. */
 .container > :first-child {
-  grid-column: 1/span 3;
+  grid-column: 1/-1;
   background-image: url(images/header.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  /* I used first-child instead of the overview class bc the directions said not to assume overview will always be the first child. */
 }
+
 
 
 
