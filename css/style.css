@@ -67,7 +67,7 @@ nav a{
 
 nav{
   background-color: #ddd;
-  padding: 25px 0; 
+  padding: 25px 0;
   text-align: left;
 }
 
@@ -206,12 +206,23 @@ first div in the grid  and place it in the grid. */
 
  /* Step 8: Write the selector/rule property to style the .text-block class. */
 .text-block {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
-  /* margin: -25px 0 0 -25px; */
-  transform: translate(-50%, -50%);
+  margin: auto;
   text-align: center;
+}
+
+.text-block:nth-child(2) {
+  top: 300px; /* Adjust the value as needed for spacing */
+}
+
+.text-block:nth-child(3) {
+  top: 600px; /* Adjust the value as needed for spacing */
+}
+
+.text-block:nth-child(4) {
+  top: 900px; /* Adjust the value as needed for spacing */
 }
 
 
